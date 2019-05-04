@@ -247,3 +247,5 @@ dmypy.json
 /classifier/corpus
 /classifier/train
 /classifier/validation
+/classifier/model.h5
+/classifier/model.json
