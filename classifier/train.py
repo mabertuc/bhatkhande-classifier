@@ -249,7 +249,7 @@ class BhatkhandeClassifier:
 
 def main():
     """Main function."""
-    bc = BhatkhandeClassifier(num_total_images=100,
+    bc = BhatkhandeClassifier(num_total_images=600,
                               percentage_train=0.8,
                               input_dir="samples",
                               num_epochs=12)

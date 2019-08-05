@@ -244,9 +244,11 @@ dmypy.json
 # End of https://www.gitignore.io/api/macos,python,intellij+all
 
 # Additions
-/classifier/original_samples
-/classifier/corpus
-/classifier/train
-/classifier/validation
-/classifier/model.h5
-/classifier/model.json
+classifier/original_samples
+classifier/corpus
+classifier/train
+classifier/validation
+classifier/model.h5
+classifier/model.json
+classifier/output
+classifier/tmp.png

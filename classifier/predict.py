@@ -88,18 +88,25 @@ def get_class_labels():
 
 def get_note(scale_degree):
     return {
-        "one": "C",
-        "flat-two": "D-",
-        "two": "D",
-        "flat-three": "E-",
-        "three": "E",
-        "four": "F",
-        "sharp-four": "F#",
-        "five": "G",
-        "flat-six": "A-",
-        "six": "A",
-        "flat-seven": "B-",
-        "seven": "B",
+        "flat-seven-low": "B-4",        
+        "seven-low": "B4",
+        "one": "C4",
+        "flat-two": "D-4",
+        "two": "D4",
+        "flat-three": "E-4",
+        "three": "E4",
+        "four": "F4",
+        "sharp-four": "F#4",
+        "five": "G4",
+        "flat-six": "A-4",
+        "six": "A4",
+        "flat-seven": "B-4",
+        "seven": "B4",
+        "one-high": "C5",
+        "flat-two-high": "D-5",
+        "two-high": "D5",
+        "three-high": "E5",
+        "five-high": "G5",
     }[scale_degree]
 
 
@@ -111,7 +118,9 @@ def generate_score(predictions):
 
     for prediction in predictions:
         if prediction != "divider":
-            if prediction == "continue":
+            if "rhythm" in prediction:
+                continue
+            elif prediction == "continue":
                 note = previous_note
                 stream.append(music21.note.Note(note, type=duration))
                 previous_note = note
@@ -122,9 +131,8 @@ def generate_score(predictions):
                 note = get_note(prediction)
                 stream.append(music21.note.Note(note, type=duration))
                 previous_note = note
-
-    stream.show()
-
+                
+    return stream
 
 def main():
     """Main function."""
