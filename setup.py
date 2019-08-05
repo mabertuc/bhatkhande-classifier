@@ -8,6 +8,7 @@ setup(
         "Keras",
         "Pillow",
         "tensorflow",
+        "music21"
     ],
     extras_require={
         "dev": [
