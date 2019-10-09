@@ -1,0 +1,3 @@
+[submodule "detector/darknet"]
+	path = detector/darknet
+	url = git@github.com:alexeyab/darknet
