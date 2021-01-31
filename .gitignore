@@ -252,3 +252,4 @@ classifier/model.h5
 classifier/model.json
 classifier/output
 classifier/tmp.png
+tests/
