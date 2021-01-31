@@ -3,11 +3,11 @@ A CNN that classifies characters with chromatic alterations in a Bhatkhande corp
 
 ## Installation:
 
-This project requires Python 3.7.4, Keras 2.2.4, Pillow 6.1.0, TensorFlow 1.14.0, and music21 5.7.0. Run 
+Project requirements are specified in the setup file. Run 
 ```
 pip install -e .
 ``` 
-in your environment from the root directory of the project to install Keras, Pillow, TensorFlow, and music21.
+in your environment from the root directory of the project to install these requirements.
 
 ## Usage:
 
