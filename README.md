@@ -23,18 +23,6 @@ python classifier/predict.py
 ``` 
 from the root directory of the project will make predictions based on the model that was previously created. classifier/predict.py requires that model.json, model.h5, a directory called samples (containing all the sample character images), and a directory containing all the images used for the predictions are in the classifier directory; modify line 135 in classifier/predict.py so that the name of the directory containing all the images used for the predictions is correct. For each image, classifier/predict.py will print the prediction for the image as well as a probability assigned to that prediction; after all the predictions have been made, a score will be shown. IMPORTANT: running classifier/predict.py will modify the images in the directory containing all the images used for the predictions so that they can be processed by the model. Avoid using originals if you do not want the images to be modified.
 
-## Testing:
-
-Run 
-```
-pip install -e .[dev]
-``` 
-from the root directory of the project to install pytest in addition to the other packages. Then run 
-```
-pytest tests
-``` 
-from the root directory of the project to run all the tests.
-
 ## Authors:
 
 If you have any questions, please contact me at <mabertuc.dev@gmail.com>.
