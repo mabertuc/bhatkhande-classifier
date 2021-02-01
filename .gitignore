@@ -246,10 +246,10 @@ dmypy.json
 # Additions
 classifier/original_samples
 classifier/corpus
-classifier/train
-classifier/validation
-classifier/model.h5
-classifier/model.json
+classifier/all_train_data/
+classifier/my_model/
+classifier/mapping.json
+classifier/model_history.png
 classifier/output
 classifier/tmp.png
 tests/
