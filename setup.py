@@ -5,7 +5,7 @@ setup(
     version='0.0.1',
     packages=['classifier'],
     install_requires=[
-        'tensorflow==2.3.1',
+        'tensorflow==2.4.0',
         'Keras==2.4.3',
         'click==7.1.2',
         'matplotlib==3.3.3',
